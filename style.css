@@ -1,12 +1,15 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 #sidebar {
     width: 250px;
-    background-color: #f4f4f4;
+    background-color: #2c3e50;
+    color: white;
     height: 100vh;
     overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -14,9 +17,9 @@ body {
 }
 
 #sidebar h2 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #ecf0f1;
 }
 
 #sidebar ul {
@@ -25,34 +28,67 @@ body {
 }
 
 #sidebar li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #sidebar a {
     text-decoration: none;
-    color: #007bff;
+    color: #ecf0f1;
     font-size: 1rem;
     display: block;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 #sidebar a:hover {
-    background-color: #e6f7ff;
+    background-color: #34495e;
 }
 
 #content {
     flex: 1;
-    padding: 20px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 #content h1 {
-    font-size: 1.8rem;
-    color: #333;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#content h2 {
+    font-size: 1.6rem;
+    color: #34495e;
+    margin-top: 40px;
+}
+
+#content h3 {
+    font-size: 1.3rem;
+    color: #16a085;
+    margin-top: 20px;
 }
 
 #content p {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
+    line-height: 1.8;
+    color: #7f8c8d;
+}
+
+code, .MathJax {
+    background-color: #ecf0f1;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+
+    #content {
+        padding: 20px;
+    }
 }
