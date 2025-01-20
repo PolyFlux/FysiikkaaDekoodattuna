@@ -1,100 +1,115 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lukiofysiikka</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lukiofysiikka</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        nav {
-            background-color: #eee;
-            padding: 1em;
-        }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-        }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
 
-        main {
-            padding: 20px;
-            margin: 0 auto;
-            max-width: 960px;
-        }
+    h1,
+    h2,
+    h3 {
+      color: #333;
+    }
 
-        h1, h2, h3 {
-            color: #333;
-        }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
+
 <body>
-
-    <header>
-        <h1>Lukiofysiikka</h1>
-        <p>Tervetuloa oppimaan fysiikkaa!</p>
-    </header>
-
+  <header>
+    <h1>Lukiofysiikka</h1>
     <nav>
-        <ul>
-            <li><a href="#">Etusivu</a></li>
-            <li><a href="#">Mekaniikka</a></li>
-            <li><a href="#">Lämpöoppi</a></li>
-            <li><a href="#">Sähköoppi</a></li>
-            <li><a href="#">Aaltoliikeoppi</a></li>
-            <li><a href="#">Moderni fysiikka</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Etusivu</a></li>
+        <li><a href="#">Mekaniikka</a></li>
+        <li><a href="#">Lämpöoppi</a></li>
+        <li><a href="#">Sähköoppi</a></li>
+        <li><a href="#">Aaltoliikeoppi</a></li>
+        <li><a href="#">Moderni fysiikka</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <h2>Tervetuloa!</h2>
-        <p>Tällä sivustolla käsitellään lukiofysiikan keskeisiä aiheita. Voit navigoida eri aiheiden välillä yläpalkin linkkien avulla.</p>
+  <div class="container">
+    <h2>Tervetuloa!</h2>
+    <p>Tällä sivustolla käsitellään lukiofysiikan keskeisiä aiheita.</p>
 
-        <h3>Mekaniikka</h3>
-        <p>Mekaniikassa tutkitaan kappaleiden liikettä ja siihen vaikuttavia voimia. Tärkeitä käsitteitä ovat mm. nopeus, kiihtyvyys, voima, työ ja energia.</p>
-
-        <h3>Lämpöoppi</h3>
-        <p>Lämpöopissa perehdytään lämpötilan, lämmön ja energian käsitteisiin. Tutustumme myös lämpölaajenemiseen, lämpökapasiteettiin ja lämpötilaeroihin.</p>
-
-        </main>
-
-    <footer>
-        <p>&copy; 2023 Lukiofysiikka</p>
-    </footer>
-
+    <h3>Esimerkkitaulukko</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Aihe</th>
+          <th>Kuvaus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mekaniikka</td>
+          <td>Liikkeen ja voimien tutkimusta.</td>
+        </tr>
+        <tr>
+          <td>Lämpöoppi</td>
+          <td>Lämpötilan, lämmön ja energian käsittelyä.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
+
 </html>
