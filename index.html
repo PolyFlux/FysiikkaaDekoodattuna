@@ -3,81 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fysiikkaa dekoodattuna</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Lukiofysiikka</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 960px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="#" class="logo">Fysiikkaa Dekoodattuna</a>
-                <ul class="nav-links">
-                    <li><a href="#fy1">FY1</a></li>
-                    <li><a href="#fy2">FY2</a></li>
-                    <li><a href="#about">Tietoa</a></li>
-                </ul>
-            </div>
-        </nav>
+        <h1>Lukiofysiikka</h1>
+        <p>Tervetuloa oppimaan fysiikkaa!</p>
     </header>
 
-    <main class="content">
-        <section id="intro">
-            <div class="container">
-                <h1>Tervetuloa Fysiikkaa Dekoodattuna -sivustolle!</h1>
-                <p>
-                    Tämä sivu on tarkoitettu tekemään fysiikan oppimisesta helpompaa ja kiinnostavampaa.
-                    Valitse ylhäältä kurssi tai aihe, jota haluat opiskella.
-                </p>
-            </div>
-        </section>
+    <nav>
+        <ul>
+            <li><a href="#">Etusivu</a></li>
+            <li><a href="#">Mekaniikka</a></li>
+            <li><a href="#">Lämpöoppi</a></li>
+            <li><a href="#">Sähköoppi</a></li>
+            <li><a href="#">Aaltoliikeoppi</a></li>
+            <li><a href="#">Moderni fysiikka</a></li>
+        </ul>
+    </nav>
 
-        <section id="fy1" class="course">
-            <div class="container">
-                <h2>FY1: Fysiikka luonnontieteenä</h2>
-                <p>
-                    Tämä kurssi käsittelee fysiikan perusperiaatteita ja kuinka liikkeen, vuorovaikutusten ja voimien ymmärtäminen auttaa meitä mallintamaan ympäristöä.
-                </p>
-                <h3 id="liike">Liikkeen kuvaaminen</h3>
-                <p>Liikkeen kuvaaminen on fysiikan perusta. Nopeus, kiihtyvyys ja matka ovat tärkeitä suureita. Esimerkiksi:</p>
-                <p class="formula">$$ v = \frac{s}{t} $$</p>
-                <h3 id="vuorovaikutukset">Vuorovaikutukset</h3>
-                <p>Vuorovaikutukset kuvaavat, miten kappaleet vaikuttavat toisiinsa voimien kautta. Esimerkiksi Newtonin toinen laki:</p>
-                <p class="formula">$$ F = ma $$</p>
-            </div>
-        </section>
+    <main>
+        <h2>Tervetuloa!</h2>
+        <p>Tällä sivustolla käsitellään lukiofysiikan keskeisiä aiheita. Voit navigoida eri aiheiden välillä yläpalkin linkkien avulla.</p>
 
-        <section id="fy2" class="course">
-            <div class="container">
-                <h2>FY2: Energia ja lämpö</h2>
-                <p>
-                    Tämä kurssi tutustuttaa sinut energian ja lämmön perusteisiin sekä niiden sovelluksiin jokapäiväisessä elämässä.
-                </p>
-                <h3 id="paine">Hydrostaattinen paine</h3>
-                <p>Hydrostaattinen paine kuvaa nesteen aiheuttamaa painetta syvyyden funktiona:</p>
-                <p class="formula">$$ p = \rho g h $$</p>
-                <h3 id="energia">Energian säilyminen</h3>
-                <p>Energian säilymisen periaate on yksi fysiikan tärkeimmistä laeista:</p>
-                <p class="formula">$$ E_{kokonais} = \text{vakio} $$</p>
-            </div>
-        </section>
+        <h3>Mekaniikka</h3>
+        <p>Mekaniikassa tutkitaan kappaleiden liikettä ja siihen vaikuttavia voimia. Tärkeitä käsitteitä ovat mm. nopeus, kiihtyvyys, voima, työ ja energia.</p>
 
-        <section id="about">
-            <div class="container">
-                <h2>Tietoa tästä sivustosta</h2>
-                <p>
-                    Tämä sivusto on suunniteltu tarjoamaan selkeä ja helppokäyttöinen alusta fysiikan oppimiseen.
-                    Sivusto käyttää modernia teknologiaa, kuten MathJaxia, kaavojen esittämiseen.
-                </p>
-            </div>
-        </section>
-    </main>
+        <h3>Lämpöoppi</h3>
+        <p>Lämpöopissa perehdytään lämpötilan, lämmön ja energian käsitteisiin. Tutustumme myös lämpölaajenemiseen, lämpökapasiteettiin ja lämpötilaeroihin.</p>
+
+        </main>
 
     <footer>
-        <div class="container">
-            <p><p>&copy; <span id="current-year"></span> Jarmo Penttilä</p></p>
-        </div>
+        <p>&copy; 2023 Lukiofysiikka</p>
     </footer>
+
 </body>
 </html>
