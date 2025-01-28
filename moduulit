@@ -15,8 +15,6 @@
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
                 <li><a href="moduulit.html">Moduulit</a></li>
-                <li><a href="#materiaalit">Materiaalit</a></li>
-                <li><a href="#yhteystiedot">Yhteystiedot</a></li>
             </ul>
         </div>
     </nav>
