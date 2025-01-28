@@ -1,18 +1,12 @@
-function toggleCourse(courseId) { 
-    const courseTopics = document.getElementById(courseId); 
-    const courseHeader = courseTopics.previousElementSibling; 
-    
-    // Sulje muut avoimet valikot 
-    document.querySelectorAll('.course-topics').forEach(topics => { 
-        if (topics.id !== courseId && topics.classList.contains('active')) { 
-            topics.classList.remove('active'); 
-            topics.previousElementSibling.classList.remove('active'); 
-        } 
-    }); 
-    
-    courseTopics.classList.toggle('active'); 
-    courseHeader.classList.toggle('active'); 
+function toggleTopic(topicId) { 
+    const topicContent = document.getElementById(topicId);
+    topicContent.classList.toggle('active');
 } 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Avaa kaikki kurssimoduulit mutta pidä aiheet piilossa
+    document.querySelectorAll('.course-topics').forEach(el => el.classList.remove('active'));
+});
 
 function showContent(topicId) { 
     const contentArea = document.getElementById('content-area'); 
