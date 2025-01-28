@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduulien sisällöt - Lukion Fysiikka</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/moduulit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Lukion Fysiikka</h1>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="moduulit.html">Moduulit</a></li>
+                <li><a href="#materiaalit">Materiaalit</a></li>
+                <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <div class="course-menu">
+                <div class="course-item">
+                    <div class="course-header" onclick="toggleCourse('fy1')">
+                        FY1 - Fysiikka luonnontieteenä
+                        <span class="arrow">▼</span>
+                    </div>
+                    <ul class="course-topics" id="fy1">
+                        <li onclick="showContent('fy1-topic1')">Mittaaminen ja SI-järjestelmä</li>
+                        <li onclick="showContent('fy1-topic2')">Graafinen mallintaminen</li>
+                        <li onclick="showContent('fy1-topic3')">Kokeellinen tutkimus</li>
+                    </ul>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-header" onclick="toggleCourse('fy2')">
+                        FY2 - Lämpö
+                        <span class="arrow">▼</span>
+                    </div>
+                    <ul class="course-topics" id="fy2">
+                        <li onclick="showContent('fy2-topic1')">Lämpötila ja lämpölaajeneminen</li>
+                        <li onclick="showContent('fy2-topic2')">Kaasujen lait</li>
+                        <li onclick="showContent('fy2-topic3')">Termodynamiikan pääsäännöt</li>
+                    </ul>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-header" onclick="toggleCourse('fy3')">
+                        FY3 - Sähkö
+                        <span class="arrow">▼</span>
+                    </div>
+                    <ul class="course-topics" id="fy3">
+                        <li onclick="showContent('fy3-topic1')">Sähkövaraus ja Coulombin laki</li>
+                        <li onclick="showContent('fy3-topic2')">Sähkökenttä ja potentiaali</li>
+                        <li onclick="showContent('fy3-topic3')">Virtapiirit</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div id="content-area">
+                <div class="welcome-message">
+                    <h2>Tervetuloa kurssisisältöihin</h2>
+                    <p>Valitse vasemmalta haluamasi kurssi ja aihe nähdäksesi sisällön.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Lukion Fysiikka | Tekijä: Jarmo Penttilä</p>
+    </footer>
+</body>
+</html>
