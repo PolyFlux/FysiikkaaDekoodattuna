@@ -41,3 +41,4 @@ function showContent(topicId) {
 
     contentArea.innerHTML = content[topicId] || '<p>Sisältöä ei löytynyt.</p>'; 
 }
+window.toggleCourse = toggleCourse;
