@@ -18,3 +18,14 @@ window.toggleCourse = function(courseId) {
         courseHeader.classList.toggle('active');
     }
 };
+window.showContent = function (filename) {
+    fetch(filename)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("content-area").innerHTML = html;
+        })
+        .catch(error => {
+            console.error("Virhe ladattaessa sisältöä:", error);
+            document.getElementById("content-area").innerHTML = "<p>Sisällön lataaminen epäonnistui.</p>";
+        });
+};
