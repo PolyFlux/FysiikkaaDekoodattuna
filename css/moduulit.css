@@ -106,7 +106,13 @@ ul, ol {
     padding-left: 2rem;
 }
 
-/* Kahden palstan asettelu entropia-sisällölle */
+/* Jätetään valikon sisältö kuitenkin sisentämättä '/
+nav ul {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Kahden palstan asettelu pääsisällölle */
 .two-column-layout {
     display: flex;
     gap: 2rem;
