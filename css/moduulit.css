@@ -99,3 +99,9 @@
 .course-header.active .arrow {
     transform: rotate(180deg);
 }
+
+/* Laitetaan listat näkymään oikein */
+ul, ol {
+    margin-left: 2rem;
+    padding-left: 2rem;
+}
