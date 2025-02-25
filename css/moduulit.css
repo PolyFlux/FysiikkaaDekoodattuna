@@ -106,7 +106,7 @@ ul, ol {
     padding-left: 2rem;
 }
 
-/* Jätetään valikon sisältö kuitenkin sisentämättä '/
+/* Jätetään valikon sisältö kuitenkin sisentämättä */
 nav ul {
     margin-left: 0 !important;
     padding-left: 0 !important;
