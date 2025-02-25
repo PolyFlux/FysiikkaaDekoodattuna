@@ -105,3 +105,27 @@ ul, ol {
     margin-left: 2rem;
     padding-left: 2rem;
 }
+
+/* Kahden palstan asettelu entropia-sisällölle */
+.two-column-layout {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.two-column-layout .main-column {
+    flex: 2; /* Leveämpi palsta */
+}
+
+.two-column-layout .side-column {
+    flex: 1; /* Kapeampi palsta */
+    background-color: #f9f9f9; /* Halutessasi taustaväri */
+    padding: 1rem;
+}
+
+/* Responsiivisuus: asettelu päällekkäin pienillä näytöillä */
+@media (max-width: 768px) {
+    .two-column-layout {
+        flex-direction: column;
+    }
+}
