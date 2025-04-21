@@ -4,4 +4,11 @@
             <p>1800-luvun puoliväliin tultaessa oli lämpöopissa havaittu muun muassa seuraavat ilmiöt:</p>
 
     </div>
+
+        <p>Huomautuksia</p>
+        
+        <div style="height: 50px;"></div> <!-- 50 pikseliä tyhjää tilaa -->
+
+        Fysiikassa entropia merkitään yleensä kirjaimella <i>S</i>.
+    </div>
 </div>
