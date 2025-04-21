@@ -1,14 +1,13 @@
 <div class="two-column-layout">
     <div class="main-column">
         <h2>Entropia</h2>
-            <p>1800-luvun puoliväliin tultaessa oli lämpöopissa havaittu muun muassa seuraavat ilmiöt:</p>
-
+            <p>1800-luvun puoliväliin tultaessa oli lämpöopissa havaittu pari tärkeää pointtia:  </p>
     </div>
 
         <p>Huomautuksia</p>
         
         <div style="height: 50px;"></div> <!-- 50 pikseliä tyhjää tilaa -->
 
-        Fysiikassa entropia merkitään yleensä kirjaimella <i>S</i>.
+        Itse asiassa ensimmäinen höyrykone keksittiin jo antiikin Kreikassa, mutta tämä jäi historian kirjoihin yksittäisenä kuriositeettina.
     </div>
 </div>
