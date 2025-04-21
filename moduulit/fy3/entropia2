@@ -6,7 +6,18 @@ si<div class="two-column-layout">
             <p><b>Ratkaisu:</b> Ei, ja sen huomaa tästä: jos kaikki lämpö menisi suoraan varren liikuttamiseen, koneen lämpötila ei nousisi yhtään, koska siihen ei riittäisi energiaa! Lämpökattilassa palaisi tuli, mutta koneen lämpötila olisi koko ajan sama, eikä ympäristökään lämpenisi yhtään. </p>
             <p><b>Pysähdy ajattelemaan:</b> Höyrykoneen ideaan kuului olennaisesti se, että kuumasta lämpökattilasta siirtyy itsestään lämpöä viileämpään ympäristöön ilman, että sitä tarvitsee mitenkään pakottaa. Miksei viileämmästä ympäristöstä sitten siirry lämpöä kuumempaan kattilaan?</p>
             <p><b>Ratkaisu:</b> Tämä selitetään vasta tässä luvussa!</p>
-            <p>Keksitkö nuo kaksi tärkeää pointtia? Ne olivat: 
+            <p>Huomasitko nuo kaksi tärkeää pointtia? Ne olivat: 
+            <ul>
+            <li>Kaikkea lämpösäiliöstä siirtyvää lämpöenergiaa ei saada käytettyä hyödyksi lämpövoimakoneen tekemään työhön.
+                <ul>
+                    <li>Työn ohella syntyy siis myös hyödytöntä hukkaenergiaa.</li>
+                    <li>Esimerkiksi höyrykoneessa polttoaineen palamisen tuottama lämpöenergia muuntuu osittain mekaaniseksi työksi, mutta aina osa energiasta menee hukkaan hukkalämpönä, kun koneen osat lämpenevät.</li>
+                </ul>
+            </li>
+            <li>
+                Lämpöä siirtyy aina itsestään lämpösäiliöstä kylmäsäiliöön, muttei koskaan toiseen suuntaan.
+            </li>
+        </ul>
             
 
     </div>
