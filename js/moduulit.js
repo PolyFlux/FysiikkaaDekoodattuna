@@ -19,13 +19,19 @@ window.toggleCourse = function(courseId) {
     }
 };
 window.showContent = function (filename) {
-    fetch(filename)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("content-area").innerHTML = html;
-        })
-        .catch(error => {
-            console.error("Virhe ladattaessa sisältöä:", error);
-            document.getElementById("content-area").innerHTML = "<p>Sisällön lataaminen epäonnistui.</p>";
-        });
+    const contentArea = document.getElementById("content-area");
+
+    if (filename.endsWith('.pdf')) {
+        contentArea.innerHTML = `<iframe src="${filename}" width="100%" height="800px" style="border: none;"></iframe>`;
+    } else {
+        fetch(filename)
+            .then(response => response.text())
+            .then(html => {
+                contentArea.innerHTML = html;
+            })
+            .catch(error => {
+                console.error("Virhe ladattaessa sisältöä:", error);
+                contentArea.innerHTML = "<p>Sisällön lataaminen epäonnistui.</p>";
+            });
+    }
 };
